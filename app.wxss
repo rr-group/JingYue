@@ -1,0 +1,54 @@
+@import 'weui/weui.wxss';
+@import 'style/iconfont/iconfont.wxss';
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.wxParse-img {
+  display: block !important;
+}
+.space {
+  height:20rpx;
+  background-color: #F2f2f2;
+}
+
+
+.flex {  display: flex; }
+.flex_item { flex: 1;}
+.flex_item_3{ flex:0 0 33%;}
+.flex_wrap{ flex-wrap: wrap; }   /* flex可换行——容器*/
+.flex_align_center{  align-items:center; } /*垂直居中——容器*/
+.flex_justify_end{ justify-content:flex-end; }  /* 水平右对齐——容器 */
+.flex_justify_center{ justify-content: center; } /*水平中对齐——容器*/
+.flex_item_align_center{ align-self:center; }/*垂直中对齐——项目*/
+.flex_item_flex_basis{ flex-basis:.1rem; }
+.colfff{ color: #fff;}
+.colccc{ color: #ccc;}
+.col999{ color: #999;}
+.colred{ color: red;}
+.colblue{ color: #33ccff}
+.f10{ font-size: 20rpx;}
+.f12{ font-size: 24rpx;}
+.f14{ font-size: 28rpx;}
+.f16{ font-size: 32rpx;}
+.f18{ font-size: 36rpx;}
+.f25{ font-size: 50rpx;}
+.ml10{ margin-left: 20rpx;}
+.mt10{ margin-top: 20rpx;}
+.mt20{ margin-top:40rpx;}
+.mt30{ margin-top: 60rpx;}
+.mt05{ margin-top: 10rpx;}
+.p10{ padding:0 20rpx;}
+.db{ display: block;}
+.tc{ text-align: center;}
+.tr{ text-align: right;}
+.tl{ text-align: left;}
+.pr{ position: relative;}
+.pa{ position: absolute;}
+button{ background: none;}
+.button-hover { background: none;}
