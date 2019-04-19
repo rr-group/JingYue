@@ -8,6 +8,8 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  color: #333;
+  font-size: 32rpx;
 } 
 .wxParse-img {
   display: block !important;
@@ -30,6 +32,7 @@
 .colfff{ color: #fff;}
 .colccc{ color: #ccc;}
 .col999{ color: #999;}
+.col333{ color: #333;}
 .colred{ color: red;}
 .colblue{ color: #33ccff}
 .f10{ font-size: 20rpx;}
@@ -42,6 +45,7 @@
 .mt10{ margin-top: 20rpx;}
 .mt20{ margin-top:40rpx;}
 .mt30{ margin-top: 60rpx;}
+.mt40{ margin-top: 80rpx;}
 .mt05{ margin-top: 10rpx;}
 .p10{ padding:0 20rpx;}
 .db{ display: block;}
@@ -52,3 +56,6 @@
 .pa{ position: absolute;}
 button{ background: none;}
 .button-hover { background: none;}
+.txtcut {
+    white-space: nowrap; overflow: hidden; text-overflow:ellipsis;
+}

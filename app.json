@@ -52,8 +52,8 @@
       },
       {
         "pagePath": "pages/classify/index",
-        "iconPath": "images/nav/home-off.png",
-        "selectedIconPath": "images/nav/home-on.png",
+        "iconPath": "images/nav/ic_catefory_normal.png",
+        "selectedIconPath": "images/nav/ic_catefory_pressed.png",
         "text": "分类"
       },
       {

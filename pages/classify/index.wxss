@@ -15,7 +15,6 @@
   flex-flow: row;
   justify-content: space-between;
   font-size: 16px;
-  float: left;
   width: 200rpx;
   background: #f8f8f8;
 }
@@ -55,7 +54,14 @@
 }
 
 .swiper-right {
-  float: left;
-  padding-left:50px;
-  line-height: 300rpx;
+  padding: 30rpx;
+  font-size: 28rpx;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow-y: auto;
+  left: 200rpx
+
 }
+.tc{ padding:10rpx;}

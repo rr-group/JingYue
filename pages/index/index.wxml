@@ -45,6 +45,7 @@
             </view>
         </scroll-view> -->
     </view>
+    
     <!-- banner -->
     <view class="swiper-container">
         <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
@@ -60,6 +61,7 @@
             </block>
         </view>
     </view>
+
     <!-- subicon -->
     <view class='rr_subMenu flex flex_wrap'>
         <view class='rr_sub_li tc' bindtap="productlist">
@@ -69,113 +71,148 @@
             <view>上装</view>
         </view>
         <view class='rr_sub_li tc' bindtap="productlist">
-             <view class="box_icon">
+            <view class="box_icon">
                 <icon class="iconfont icon-plum"></icon>
             </view>
             <view>家居内衣</view>
         </view>
         <view class='rr_sub_li tc' bindtap="productlist">
-             <view class="box_icon">
+            <view class="box_icon">
                 <icon class="iconfont icon-plum"></icon>
             </view>
             <view>裙装</view>
         </view>
         <view class='rr_sub_li tc' bindtap="productlist">
-             <view class="box_icon">
+            <view class="box_icon">
                 <icon class="iconfont icon-plum"></icon>
             </view>
             <view>外套</view>
         </view>
         <view class='rr_sub_li tc' bindtap="productlist">
-             <view class="box_icon">
+            <view class="box_icon">
                 <icon class="iconfont icon-plum"></icon>
             </view>
             <view>内裤</view>
         </view>
         <view class='rr_sub_li tc' bindtap="productlist">
-             <view class="box_icon">
+            <view class="box_icon">
                 <icon class="iconfont icon-plum"></icon>
             </view>
             <view>裤装</view>
         </view>
         <view class='rr_sub_li tc' bindtap="productlist">
-             <view class="box_icon">
+            <view class="box_icon">
                 <icon class="iconfont icon-plum"></icon>
             </view>
             <view>特价区</view>
         </view>
         <view class='rr_sub_li tc' bindtap="productlist">
-             <view class="box_icon">
+            <view class="box_icon">
                 <icon class="iconfont icon-plum"></icon>
             </view>
             <view>套装</view>
         </view>
     </view>
+
     <!-- 甄选产品 -->
-    <!-- 最新产品 -->
-    <!-- <view class="weui-loadmore weui-loadmore_line" wx:if="{{goodsRecommend.length > 0 && activeCategoryId == 0}}">
-        <view class="weui-loadmore__tips weui-loadmore__tips_in-line">爆品推荐</view>
-    </view>
-    <view class="goods-container" wx:if="{{goodsRecommend.length > 0 && activeCategoryId == 0}}">
-        <view class="goods-box" wx:for-items="{{goodsRecommend}}" wx:key="*this" bindtap="toDetailsTap" data-id="{{item.id}}">
-            <view class="img-box">
-                <image src="{{item.pic}}_m" class="image" mode="aspectFill" lazy-load="true" />
-            </view>
-            <view class="goods-title">{{item.name}}</view>
-            <view style='display:flex;'>
-                <view class="goods-price">¥ {{item.minPrice}}</view>
-                <view wx:if="{{item.originalPrice && item.originalPrice > 0}}" class="goods-price" style='color:#aaa;text-decoration:line-through'>¥ {{item.originalPrice}}</view>
-            </view>
+    <view class='space'></view>
+    <view class='rr_box'>
+        <view class='flex'>
+            <text class='flex_item f18'>甄选产品</text>
+            <text class='f14 col999'>更多   ></text>
         </view>
-    </view>
-    <view wx-if="{{kanjiaList.length > 0}}" class="weui-panel weui-panel_access" style='margin-top:0px;'>
-        <view class="weui-panel__hd">疯狂砍价</view>
-        <view class="weui-panel__bd">
-            <view wx:for-items="{{kanjiaList}}" wx:key="*this" class="weui-media-box weui-media-box_appmsg">
-                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                    <image class="weui-media-box__thumb" src="{{kanjiaGoodsMap[item.goodsId].pic}}_m" />
-                </view>
-                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                    <view class="weui-media-box__title">{{kanjiaGoodsMap[item.goodsId].name}}</view>
-                    <view class="weui-media-box__desc">{{kanjiaGoodsMap[item.goodsId].characteristic}}</view>
-                    <view class="weui-media-box__info" style='color:#333;line-height:2em;'>
-                        <view class="weui-media-box__info__meta">原价:{{item.originalPrice}}</view>
-                        <view class="weui-media-box__info__meta" style='color:#e64340;'>底价:{{item.minPrice}}</view>
-                        <view class="weui-media-box__info__meta" style='float:right;'>
-                            <button class="weui-btn mini-btn" type="warn" size="mini" bindtap="toDetailsTap" data-id="{{item.goodsId}}">砍价</button>
-                        </view>
+        <swiper display-multiple-items="3.2" next-margin='10rpx' class='mt10' style='height:330rpx;'>
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <view class='s_border tc'>
+                        <image src="{{item}}" style="height:100%; width:100%"></image>
                     </view>
-                </view>
-            </view>
-        </view>
+                    <view class='txtcut mt10'>康师傅红烧牛肉面</view>
+                    <view class='flex mt10'>
+                        <text class='flex_item colred'>¥6.00</text>
+                        <icon class='iconfont icon-gouwuche'></icon>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
     </view>
-    <block wx:if="{{pingtuanList.length > 0}}">
-        <view class='space'></view>
-        <view class="weui-loadmore weui-loadmore_line">
-            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">全民拼团</view>
+
+    <!-- 最新产品 -->
+    <view class='space'></view>
+    <view class='rr_box'>
+        <view class='flex'>
+            <text class='flex_item f18'>最新商品</text>
+            <text class='f14 col999'>更多   ></text>
         </view>
-        <view class='tuan'>
-            <view class='tuan-item' wx:for-items="{{pingtuanList}}" wx:key="*this">
-                <view class='tuan-goods-pic'>
-                    <image src="{{item.pic}}" mode="widthFix" lazy-load="true" />
-                </view>
-                <view class='tuan-title'>{{item.name}}</view>
-                <view class='tuan-profile'>{{item.characteristic}}</view>
-                <view class="weui-badge" style="margin-left: 20rpx;" wx:if="{{item.tags}}">{{item.tags}}</view>
-                <view class='tuan-price'>
-                    <text class='now'>￥ {{item.pingtuanPrice}}</text>
-                    <text class='original'>￥ {{item.originalPrice}}</text>
-                </view>
-                <view class="tuan-btn">
-                    <button type="warn" size="mini" bindtap="toDetailsTap" data-id="{{item.id}}">拼团</button>
-                </view>
-            </view>
+        <image src='../../images/fxad.jpeg' class='rr_box_img'></image>
+        <swiper display-multiple-items="3.2" next-margin='10rpx' class='mt10' style='height:330rpx;'>
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <view class='s_border tc'>
+                        <image src="{{item}}" style="height:100%; width:100%"></image>
+                    </view>
+                    <view class='txtcut mt10'>康师傅红烧牛肉面</view>
+                    <view class='flex mt10'>
+                        <text class='flex_item colred'>¥6.00</text>
+                        <icon class='iconfont icon-gouwuche'></icon>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <!--最热商品-->
+    <view class='space'></view>
+    <view class='rr_box'>
+        <view class='flex'>
+            <text class='flex_item f18'>最热商品</text>
+            <text class='f14 col999'>更多   ></text>
         </view>
-    </block> -->
+        <image src='../../images/fxad.jpeg' class='rr_box_img'></image>
+        <swiper display-multiple-items="3.2" next-margin='10rpx' class='mt10' style='height:330rpx;'>
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <view class='s_border tc'>
+                        <image src="{{item}}" style="height:100%; width:100%"></image>
+                    </view>
+                    <view class='txtcut mt10'>康师傅红烧牛肉面</view>
+                    <view class='flex mt10'>
+                        <text class='flex_item colred'>¥6.00</text>
+                        <icon class='iconfont icon-gouwuche'></icon>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <!--精选商品-->
+    <view class='space'></view>
+    <view class='rr_box'>
+        <view class='flex'>
+            <text class='flex_item f18'>精选商品</text>
+            <text class='f14 col999'>更多   ></text>
+        </view>
+        <image src='../../images/fxad.jpeg' class='rr_box_img'></image>
+        <swiper display-multiple-items="3.2" next-margin='10rpx' class='mt10' style='height:330rpx;'>
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <view class='s_border tc'>
+                        <image src="{{item}}" style="height:100%; width:100%"></image>
+                    </view>
+                    <view class='txtcut mt10'>康师傅红烧牛肉面</view>
+                    <view class='flex mt10'>
+                        <text class='flex_item colred'>¥6.00</text>
+                        <icon class='iconfont icon-gouwuche'></icon>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
     <!-- 猜你喜欢 -->
     <view class='space'></view>
     <view class="weui-loadmore weui-loadmore_line">
-        <view class="weui-loadmore__tips weui-loadmore__tips_in-line">商品列表</view>
+        <view class="weui-loadmore__tips weui-loadmore__tips_in-line">猜你喜欢</view>
     </view>
     <view class="goods-container">
         <view class="goods-box" wx:for-items="{{goods}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
@@ -192,7 +229,4 @@
         </view>
     </view>
     <view hidden="{{loadingMoreHidden ? true : false}}" class="no-more-goods">没有更多啦</view>
-</view>
-<view class='coupons-float' bindtap="goCoupons">
-    <image src="/images/gift.png"></image>
 </view>
