@@ -1,0 +1,51 @@
+/* pages/search/index.wxss */
+
+.search {
+  align-items: center;
+  /* width:90%; */
+  height: 60rpx;
+  margin-top: 5%;
+  margin-left: 3%;
+  display: flex;
+}
+
+/* 搜索框提示文字样式 */
+
+.search input {
+  width: 80%;
+  font-size: 27rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 30rpx;
+  border-radius: 30rpx;
+  border: 1rpx solid #ccc;
+}
+
+/* 搜索框小图标 */
+
+.search_text {
+  font-size: 27rpx;
+  margin-left: 20rpx;
+}
+
+.search_hot {
+  border-top: 1rpx solid #ccc;
+  margin-top: 20rpx;
+}
+
+.search_hotTitle {
+  font-size: 32rpx;
+  padding: 30rpx;
+}
+
+.search_hotList text {
+  display: inline-block;
+  width:100rpx;
+  height:40rpx;
+  background: #ccc;
+  border-radius:20rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 40rpx;
+   margin-left:20rpx;
+   margin-top: 20rpx;
+}

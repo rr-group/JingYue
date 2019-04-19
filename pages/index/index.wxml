@@ -1,7 +1,7 @@
 <view class="container">
     <!-- search -->
     <view class="page__bd">
-        <view class='rr_search flex'>
+        <view class='rr_search flex' bindtap="bindWithdraw">
             <input placeholder='搜索'></input>
         </view>
         <!-- <view class="weui-search-bar">
@@ -62,39 +62,53 @@
     </view>
     <!-- subicon -->
     <view class='rr_subMenu flex flex_wrap'>
-        <view class='rr_sub_li tc'>
+        <view class='rr_sub_li tc' bindtap="productlist">
             <view class="box_icon">
                 <icon class="iconfont icon-plum"></icon>
             </view>
-            <view>1</view>
+            <view>上装</view>
         </view>
-        <view class='rr_sub_li tc'>
-            <icon>1</icon>
-            <view>1</view>
+        <view class='rr_sub_li tc' bindtap="productlist">
+             <view class="box_icon">
+                <icon class="iconfont icon-plum"></icon>
+            </view>
+            <view>家居内衣</view>
         </view>
-        <view class='rr_sub_li tc'>
-            <icon>1</icon>
-            <view>1</view>
+        <view class='rr_sub_li tc' bindtap="productlist">
+             <view class="box_icon">
+                <icon class="iconfont icon-plum"></icon>
+            </view>
+            <view>裙装</view>
         </view>
-        <view class='rr_sub_li tc'>
-            <icon>1</icon>
-            <view>1</view>
+        <view class='rr_sub_li tc' bindtap="productlist">
+             <view class="box_icon">
+                <icon class="iconfont icon-plum"></icon>
+            </view>
+            <view>外套</view>
         </view>
-        <view class='rr_sub_li tc'>
-            <icon>1</icon>
-            <view>1</view>
+        <view class='rr_sub_li tc' bindtap="productlist">
+             <view class="box_icon">
+                <icon class="iconfont icon-plum"></icon>
+            </view>
+            <view>内裤</view>
         </view>
-        <view class='rr_sub_li tc'>
-            <icon>1</icon>
-            <view>1</view>
+        <view class='rr_sub_li tc' bindtap="productlist">
+             <view class="box_icon">
+                <icon class="iconfont icon-plum"></icon>
+            </view>
+            <view>裤装</view>
         </view>
-        <view class='rr_sub_li tc'>
-            <icon>1</icon>
-            <view>1</view>
+        <view class='rr_sub_li tc' bindtap="productlist">
+             <view class="box_icon">
+                <icon class="iconfont icon-plum"></icon>
+            </view>
+            <view>特价区</view>
         </view>
-        <view class='rr_sub_li tc'>
-            <icon>1</icon>
-            <view>1</view>
+        <view class='rr_sub_li tc' bindtap="productlist">
+             <view class="box_icon">
+                <icon class="iconfont icon-plum"></icon>
+            </view>
+            <view>套装</view>
         </view>
     </view>
     <!-- 甄选产品 -->

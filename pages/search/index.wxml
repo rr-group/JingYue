@@ -1,0 +1,14 @@
+<!--pages/search/index.wxml-->
+<view>
+  <view class='search'>
+    <input type='text' placeholder='输入你想要的内容' confirm-type='search' value="{{inputValue}}" bindinput='inputBind' bindconfirm='query'></input>
+    <text class='search_text'>搜索</text>
+  </view>
+  <view class='search_hot'>
+    <text class='search_hotTitle'>热门搜索</text>
+    <view class='search_hotList'>
+      <text>旅行</text>
+      <text>拍照</text>
+    </view>
+  </view>
+</view>

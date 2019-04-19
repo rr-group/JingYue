@@ -1,0 +1,61 @@
+/* pages/classify/index.wxss */
+.box{
+  height: 100%;
+}
+.about_page {
+  margin: 0 10px;
+  height: 100%;
+}
+
+.swiper-tab {
+  /* height: 100%;
+   */
+   height:100vh;
+  text-align: center;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 16px;
+  float: left;
+  width: 200rpx;
+  background: #f8f8f8;
+}
+
+.swiper-tab-item {
+  color: #434343;
+  height: 88rpx;
+  line-height: 88rpx;
+ 
+}
+
+.active {
+  color:#f5dd32;
+  font-size: 16px;
+  font-weight: bold;
+   background: #fff;
+   height: 88rpx;
+  line-height: 88rpx;
+}
+
+.juzhong {
+  margin: 0 auto;
+}
+
+.domain {
+  background-color: #fff;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.swiper-right {
+  float: left;
+  padding-left:50px;
+  line-height: 300rpx;
+}

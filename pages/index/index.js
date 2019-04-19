@@ -55,11 +55,24 @@ Page({
       swiperCurrent: e.detail.current
     })
   },
+  //点击搜索
+  bindWithdraw: function () {
+    wx.navigateTo({
+      url: '/pages/search/index'
+    });
+  },
+  //点击商品列表
+  productlist: function (e) {
+    wx.navigateTo({
+      url: "/pages/productlist/index"
+    })
+  },
   toDetailsTap: function(e) {
     wx.navigateTo({
       url: "/pages/goods-details/index?id=" + e.currentTarget.dataset.id
     })
   },
+
   tapBanner: function(e) {
     if (e.currentTarget.dataset.id != 0) {
       wx.navigateTo({

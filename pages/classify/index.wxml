@@ -1,0 +1,68 @@
+<!--pages/classify/index.wxml-->
+<view class='box'>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">上装</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">家居内衣</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">裙装</view>
+    <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="2" bindtap="clickTab">外套</view>
+    <view class="swiper-tab-item {{currentTab==4?'active':''}}" data-current="2" bindtap="clickTab">内裤</view>
+    <view class="swiper-tab-item {{currentTab==5?'active':''}}" data-current="2" bindtap="clickTab">裤装</view>
+    <view class="swiper-tab-item {{currentTab==6?'active':''}}" data-current="2" bindtap="clickTab">特价区</view>
+    <view class="swiper-tab-item {{currentTab==7?'active':''}}" data-current="2" bindtap="clickTab">套装</view>
+     <view class="swiper-tab-item {{currentTab==8?'active':''}}" data-current="2" bindtap="clickTab">秒杀</view>
+      <view class="swiper-tab-item {{currentTab==9?'active':''}}" data-current="2" bindtap="clickTab">袜子</view>
+  </view>
+  <view class='swiper-right'>
+    <view class="{{currentTab == 0 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容1</text>
+      </scroll-view>
+    </view>
+    <view class="{{currentTab == 1 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容2</text>
+      </scroll-view>
+    </view>
+    <view class="{{currentTab == 2 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容3</text>
+      </scroll-view>
+    </view>
+     <view class="{{currentTab == 3 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容3</text>
+      </scroll-view>
+    </view>
+     <view class="{{currentTab == 4 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容4</text>
+      </scroll-view>
+    </view>
+     <view class="{{currentTab == 5 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容5</text>
+      </scroll-view>
+    </view>
+     <view class="{{currentTab == 6 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容6</text>
+      </scroll-view>
+    </view>
+     <view class="{{currentTab == 7 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容7</text>
+      </scroll-view>
+    </view>
+     <view class="{{currentTab == 8 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容8</text>
+      </scroll-view>
+    </view>
+     <view class="{{currentTab == 9 ? 'show':'hidden'}}">
+      <scroll-view>
+        <text>暂无内容9</text>
+      </scroll-view>
+    </view>
+  </view>
+
+</view>
